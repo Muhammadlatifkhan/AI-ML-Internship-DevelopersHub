@@ -318,15 +318,6 @@ With real data and more resources:
    - Grad-CAM for image regions
    - LIME for local explanations
 
-## 📧 Contact
-
-**Muhammad Latif**  
-AI/ML Developer
-
-- **GitHub:** [github.com/Muhammadlatifkhan](https://github.com/Muhammadlatifkhan)
-- **Email:** muhammad.latif@example.com
-- **LinkedIn:** [linkedin.com/in/muhammad-latif-khan](https://linkedin.com/in/your-profile)
-
 ## 📅 Project Status
 
 ✅ **COMPLETED** - May 2026
