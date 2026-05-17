@@ -1,0 +1,35 @@
+# Company Information
+
+## About Developers Hub Corporation
+Developers Hub Corporation is a leading technology company specializing in AI and machine learning solutions. Founded in 2020, the company has grown to serve over 500 clients worldwide.
+
+## Services Offered
+1. AI/ML Consulting - Custom AI solutions for businesses
+2. Deep Learning Models - BERT, GPT, Computer Vision
+3. Data Analytics - Business intelligence and insights
+4. Cloud Solutions - AWS, Azure, GCP deployment
+
+## Internship Program
+The internship program at Developers Hub Corporation runs for 3 months. Interns work on real-world projects including:
+- Natural Language Processing
+- Computer Vision
+- Multimodal AI Systems
+- Production ML Pipelines
+
+## MSA Technologies Partnership
+MSA Technologies is a strategic partner of Developers Hub Corporation. Together they provide:
+- Joint AI research initiatives
+- Technology exchange programs
+- Shared resources for internship training
+
+## Technical Stack Used
+- Python 3.11+
+- PyTorch & TensorFlow
+- LangChain for RAG applications
+- Streamlit for web interfaces
+- scikit-learn for classical ML
+
+## Contact Information
+Email: info@developershub.com
+Website: www.developershub.com
+Location: Karachi, Pakistan
