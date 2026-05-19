@@ -1,12 +1,13 @@
-# 🚀 AI/ML Engineering Internship - DevelopersHub Corporation
+# 🚀 AI/ML Engineering Internship - DevelopersHub Corporation & MSA Technologies
 
 ## 👨‍💻 Intern Information
+
 | Field | Details |
 |-------|---------|
-| **Name** | Muhammad Latif |
-| **Role** | AI/ML Engineering Intern |
-| **Submission Date** | April 25, 2026 |
-| **Status** | ✅ All 6 Tasks Completed |
+| Name | Muhammad Latif |
+| Role | AI/ML Engineering Intern |
+| Submission Date | May 19, 2026 |
+| Status | ✅ All Tasks Completed |
 
 ---
 
@@ -20,6 +21,11 @@
 | **Task 4** | Health Chatbot | Groq API, Llama 3.3 70B | ✅ |
 | **Task 5** | Mental Health Chatbot | DistilGPT2, LoRA, PEFT | ✅ |
 | **Task 6** | House Price Prediction | Gradient Boosting, Linear Regression | ✅ |
+| **Task 7** | News Topic Classifier | BERT, Transformers, Streamlit | ✅ |
+| **Task 8** | Customer Churn Pipeline | scikit-learn Pipeline, GridSearchCV | ✅ |
+| **Task 9** | Multimodal Price Predictor | ResNet18, PyTorch, Feature Fusion | ✅ |
+| **Task 10** | RAG Chatbot | LangChain, Groq, ChromaDB | ✅ |
+| **Task 11** | Auto Ticket Tagging | LLM, Zero/Few-shot Learning | ✅ |
 
 ---
 
@@ -31,20 +37,17 @@ AI-ML-Internship-DevelopersHub/
 ├── Task1-Iris-Data-Visualization/
 │   ├── task1_iris_visualization.py
 │   ├── README.md
-│   ├── requirements.txt
-│   └── images/ (5 PNG files)
+│   └── requirements.txt
 │
 ├── Task2-Stock-Price-Prediction/
 │   ├── task2_stock_prediction.py
 │   ├── README.md
-│   ├── requirements.txt
-│   └── images/ (5 PNG files)
+│   └── requirements.txt
 │
 ├── Task3-Heart-Disease-Prediction/
 │   ├── task3_heart_disease.py
 │   ├── README.md
-│   ├── requirements.txt
-│   └── images/ (5 PNG files)
+│   └── requirements.txt
 │
 ├── Task4-Health-Chatbot/
 │   ├── task4_health_chatbot.py
@@ -52,7 +55,6 @@ AI-ML-Internship-DevelopersHub/
 │   └── requirements.txt
 │
 ├── Task5-Mental-Health-Chatbot/
-│   ├── mental_health_chatbot_lora/ (LoRA adapters)
 │   ├── task5_chatbot.py
 │   ├── README.md
 │   └── requirements.txt
@@ -60,8 +62,42 @@ AI-ML-Internship-DevelopersHub/
 ├── Task6-House-Price-Prediction/
 │   ├── task6_house_price.py
 │   ├── README.md
-│   ├── requirements.txt
-│   └── images/ (5 PNG files)
+│   └── requirements.txt
+│
+├── Task7-News-Topic-Classifier/
+│   ├── app.py
+│   ├── train_multimodal.py
+│   ├── saved_model/
+│   ├── README.md
+│   └── requirements.txt
+│
+├── Task8-Customer-Churn-Pipeline/
+│   ├── train_pipeline.py
+│   ├── predict.py
+│   ├── outputs/
+│   ├── README.md
+│   └── requirements.txt
+│
+├── Task9-Housing-Price-Prediction/
+│   ├── train_multimodal.py
+│   ├── data/
+│   ├── outputs/
+│   ├── README.md
+│   └── requirements.txt
+│
+├── Task10-RAG-Chatbot/
+│   ├── chatbot.py
+│   ├── ingest_documents.py
+│   ├── vector_store/
+│   ├── README.md
+│   └── requirements.txt
+│
+├── Task11-Support-Ticket-Tagger/
+│   ├── ticket_tagger.py
+│   ├── evaluate_models.py
+│   ├── data/
+│   ├── README.md
+│   └── requirements.txt
 │
 └── README.md (this file)
 ```
@@ -78,17 +114,30 @@ cd AI-ML-Internship-DevelopersHub
 
 ### 2. Navigate to a Task Folder
 ```bash
-cd Task1-Iris-Data-Visualization
+cd Task7-News-Topic-Classifier
 ```
 
-### 3. Install Dependencies
+### 3. Create Virtual Environment (Recommended)
+```bash
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Script
+### 5. Run the Application
 ```bash
-python task1_iris_visualization.py
+# For Streamlit apps (Task 7, 10, 11)
+streamlit run app.py
+
+# For Python scripts (Task 1-6, 8, 9)
+python train_pipeline.py
 ```
 
 ---
@@ -96,7 +145,7 @@ python task1_iris_visualization.py
 ## 📈 Task Highlights & Results
 
 ### Task 1: Iris Dataset Visualization
-- Exploratory Data Analysis on famous Iris dataset
+- Exploratory Data Analysis on Iris dataset
 - Visualizations: scatter plots, histograms, box plots, correlation heatmap
 - Key insight: Petal features are more discriminative than sepal features
 
@@ -110,7 +159,7 @@ python task1_iris_visualization.py
 - UCI dataset with 303 patient records
 - **Logistic Regression:** 83.33% accuracy, ROC-AUC = 0.9498
 - **Random Forest:** 83.33% accuracy, ROC-AUC = 0.9442
-- Top features: Chest pain type (cp), Thalassemia (thal), Major vessels (ca)
+- Top features: Chest pain type, Thalassemia, Major vessels
 
 ### Task 4: Health Chatbot
 - Groq API with Llama 3.3 70B model
@@ -130,6 +179,37 @@ python task1_iris_visualization.py
 - **Gradient Boosting:** R² = 0.9183, MAE = $27,745
 - Top feature: Square footage (68.47% importance)
 
+### Task 7: News Topic Classifier (BERT)
+- Fine-tuned BERT-base-uncased on AG News dataset
+- **Accuracy:** 94.64%, **F1 Score:** 94.65%
+- Categories: World, Sports, Business, Sci/Tech
+- Streamlit web interface for real-time predictions
+
+### Task 8: Customer Churn Pipeline
+- End-to-end ML pipeline with scikit-learn
+- **Best Model:** Random Forest (tuned)
+- **Accuracy:** 80.13%, **ROC-AUC:** 84.27%
+- GridSearchCV for hyperparameter optimization
+- Production-ready pipeline exported with joblib
+
+### Task 9: Multimodal Price Predictor
+- Combines CNN (ResNet18) + Tabular data
+- Feature fusion architecture
+- **MAE:** $267,023, **RMSE:** $322,870
+- Demonstrates multimodal learning concepts
+
+### Task 10: RAG Chatbot
+- LangChain + Groq + ChromaDB
+- Conversation memory for context
+- Document retrieval from knowledge base
+- **LLM:** Llama 3.3 70B (10x faster)
+
+### Task 11: Auto Ticket Tagging
+- Zero-shot vs Few-shot learning comparison
+- **Categories:** network_issues, billing, account_access, technical_bug, subscription, performance, api_support
+- Top-3 predictions with confidence scores
+- Streamlit web interface
+
 ---
 
 ## 🛠️ Technologies Used
@@ -138,24 +218,98 @@ python task1_iris_visualization.py
 |----------|--------------|
 | **Data Manipulation** | Pandas, NumPy |
 | **Visualization** | Matplotlib, Seaborn |
-| **Machine Learning** | Scikit-learn (Linear Regression, Random Forest, Gradient Boosting, Logistic Regression) |
-| **Deep Learning** | PyTorch, Transformers, PEFT, LoRA |
+| **Classical ML** | Scikit-learn (Linear Regression, Random Forest, Gradient Boosting, Logistic Regression) |
+| **Deep Learning** | PyTorch, Transformers, PEFT, LoRA, BERT |
+| **Computer Vision** | ResNet18, CNNs, Transfer Learning |
+| **LLM & RAG** | Groq API, LangChain, ChromaDB, Llama 3.3 70B |
+| **Web Deployment** | Streamlit |
 | **APIs** | Groq API, yfinance |
-| **Environment** | Python 3.11, VS Code, Google Colab |
+| **Environment** | Python 3.11, VS Code, Google Colab, Jupyter |
+
+---
+
+## 📊 Skills Demonstrated
+
+| Skill Area | Tasks |
+|------------|-------|
+| **Data Analysis & Visualization** | Task 1, 2, 3, 6 |
+| **Classical Machine Learning** | Task 2, 3, 6, 8 |
+| **Deep Learning (NLP)** | Task 5, 7, 10, 11 |
+| **Computer Vision** | Task 9 |
+| **Multimodal AI** | Task 9 |
+| **LLM & RAG Applications** | Task 4, 10, 11 |
+| **ML Pipelines** | Task 8 |
+| **Model Deployment** | Task 7, 8, 9, 10, 11 |
+| **Prompt Engineering** | Task 4, 10, 11 |
+| **Version Control** | Git, GitHub |
+
+---
+
+## 🔑 API Keys Required
+
+| Task | API Key | Where to Get |
+|------|---------|--------------|
+| Task 4 | Groq API | [console.groq.com](https://console.groq.com) |
+| Task 10 | Groq API | [console.groq.com](https://console.groq.com) |
+| Task 11 | Groq API | [console.groq.com](https://console.groq.com) |
+
+**Note:** All Groq API keys are free (no credit card required).
 
 ---
 
 ## 📝 Important Notes
 
-- **Task 4** requires a Groq API key (free at [console.groq.com](https://console.groq.com))
-- **Task 5** includes fine-tuned LoRA adapters (model weights not included in GitHub due to size)
-- All visualizations are saved in `images/` folders within each task
+- **Tasks 4, 10, 11** require Groq API key in `.env` file
+- **Task 7** requires downloading trained model (instructions in task README)
+- **Task 9** uses synthetic images (no external download needed)
+- **Task 5** includes LoRA adapters (fine-tuned weights)
 - Each task has its own `requirements.txt` for isolated dependency management
+- Virtual environments recommended for each task
+
+---
+
+## 🎯 Learning Outcomes
+
+Throughout this internship, I have gained proficiency in:
+
+1. **Data Science:** Exploratory data analysis, visualization, feature engineering
+2. **Machine Learning:** Regression, classification, ensemble methods, pipelines
+3. **Deep Learning:** Transformers, BERT, CNNs, transfer learning, LoRA fine-tuning
+4. **Computer Vision:** Image feature extraction, multimodal learning
+5. **LLM Applications:** Prompt engineering, RAG, few-shot learning
+6. **MLOps:** Model deployment, Streamlit, version control
+7. **Production Readiness:** ML pipelines, model serialization, API integration
 
 ---
 
 ## 📧 Contact
 
-For any questions about this submission, please contact:
+Muhammad Latif  
+AI/ML Engineer
 
-**Muhammad Latif** - AI/ML Engineering Intern
+- GitHub: [github.com/Muhammadlatifkhan](https://github.com/Muhammadlatifkhan)
+- Email: laahmad7777@gmail.com
+- LinkedIn:[linkedin.com/in/muhammad-latif-khan](https://linkedin.com/in/your-profile)
+
+---
+
+## 🙏 Acknowledgments
+
+- **DevelopersHub Corporation** for this internship opportunity
+- **MSA Technologies** for guidance and mentorship
+- **Groq** for providing free LLM API access
+- **Hugging Face** for transformers and datasets
+- **OpenAI, Meta** for open-source models (BERT, Llama)
+
+---
+
+## 📅 Project Status
+
+✅ **COMPLETED** - May 19, 2026
+
+
+
+---
+
+⭐ **If you found this repository helpful, please give it a star on GitHub!**
+```
