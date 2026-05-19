@@ -286,14 +286,6 @@ Run ingestion script first:
 python ingest_documents.py
 ```
 
- 📧 Contact
-
-Muhammad Latif  
-AI/ML Developer
-
-- GitHub: [github.com/Muhammadlatifkhan](https://github.com/Muhammadlatifkhan)
-- Email: laahmad7777@gmail.com
-- LinkedIn: [linkedin.com/in/muhammad-latif-khan](https://linkedin.com/in/your-profile)
  📅 Project Status
 
 ✅ COMPLETED - May 2026
@@ -343,6 +335,14 @@ Assistant: Based on our knowledge base, Developers Hub Corporation offers:
 3. Data Analytics
 4. Cloud Solutions (AWS, Azure, GCP)
 ```
+ 📧 Contact
+
+Muhammad Latif  
+AI/ML Developer
+
+- GitHub: [github.com/Muhammadlatifkhan](https://github.com/Muhammadlatifkhan)
+- Email: laahmad7777@gmail.com
+- LinkedIn: [linkedin.com/in/muhammad-latif-khan](https://linkedin.com/in/your-profile)
 
 ---
 
