@@ -1,4 +1,4 @@
-# 🚀 AI/ML Engineering Internship - DevelopersHub Corporation & MSA Technologies
+# 🚀 AI/ML Engineering Internship - DevelopersHub Corporation
 
 ## 👨‍💻 Intern Information
 
