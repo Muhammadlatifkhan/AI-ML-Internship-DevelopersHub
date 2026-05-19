@@ -5,7 +5,7 @@
 | Field | Details |
 |-------|---------|
 | Name | Muhammad Latif |
-| Role | AI/ML Engineering Intern |
+| Role | AI/ML Engineer |
 | Submission Date | May 19, 2026 |
 | Status | ✅ All Tasks Completed |
 
